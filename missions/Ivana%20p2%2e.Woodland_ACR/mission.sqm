@@ -1,0 +1,423 @@
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+		"rhs_cti_insurgents",
+		"woodland_acr",
+		"A3_Modules_F_Intel",
+		"rhs_c_troops",
+		"rhs_c_weapons"
+	};
+	addOnsAuto[]=
+	{
+		"rhs_cti_insurgents",
+		"A3_Modules_F_Intel",
+		"rhs_c_troops",
+		"rhs_c_weapons",
+		"woodland_acr"
+	};
+	randomSeed=12939540;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.15000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.15000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2010;
+		month=7;
+		day=6;
+		hour=10;
+		minute=0;
+		startFogDecay=0.0049999999;
+		forecastFogDecay=0.0049999999;
+	};
+	class Groups
+	{
+		items=4;
+		class Item0
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=5;
+				class Item0
+				{
+					position[]={7637.3599,144.78896,45.825348};
+					id=0;
+					side="GUER";
+					vehicle="rhs_g_Soldier_SL_F";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+					syncId=0;
+					synchronizations[]={6,5};
+				};
+				class Item1
+				{
+					position[]={7629.7178,146.51619,37.114563};
+					id=1;
+					side="GUER";
+					vehicle="rhs_g_Soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					syncId=1;
+					synchronizations[]={6,5};
+				};
+				class Item2
+				{
+					position[]={7647.5991,145.34557,36.808777};
+					id=2;
+					side="GUER";
+					vehicle="rhs_g_Soldier_M_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					syncId=2;
+					synchronizations[]={6,5};
+				};
+				class Item3
+				{
+					position[]={7636.5947,147.18422,30.695801};
+					id=3;
+					side="GUER";
+					vehicle="rhs_g_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					syncId=3;
+					synchronizations[]={6,5};
+				};
+				class Item4
+				{
+					position[]={7650.3491,146.21208,31.765594};
+					id=4;
+					side="GUER";
+					vehicle="rhs_g_Soldier_AT_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					syncId=4;
+					synchronizations[]={6,5};
+				};
+			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7608.1133,151.88246,14.881439};
+					class args
+					{
+						items=5;
+						class Item0
+						{
+							value="1";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Subject";
+						};
+						class Item2
+						{
+							value="Mission";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="PresetTitle";
+						};
+						class Item3
+						{
+							value="Two Birds with One Stone";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Title";
+						};
+						class Item4
+						{
+							value="The situation is not good. Russian troops no longer follow you, but the surrounding area is swarming with them. Despite this, we may be able to get some use out of you set. The enemy will be searching for you, this means their supply depot to the West should be undefended. Make your way there, blow the depot and regroup with Bravo squad.";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Description";
+						};
+					};
+					id=5;
+					side="LOGIC";
+					vehicle="ModuleCreateDiaryRecord_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					syncId=5;
+					synchronizations[]={0,1,3,2,4};
+				};
+			};
+		};
+		class Item2
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7605.2368,151.46135,17.777252};
+					class args
+					{
+						items=5;
+						class Item0
+						{
+							value="1";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Subject";
+						};
+						class Item2
+						{
+							value="Situation";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="PresetTitle";
+						};
+						class Item3
+						{
+							value="The situation.";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Title";
+						};
+						class Item4
+						{
+							value="It looks like the Russian forces have given up chase. However they have radioed ahead to their allies. They hope to catch you crossing the river and eliminate you there. We've managed to drop a supply crate at your position, although as before these will only be Russian armaments due to the nature of the operation.";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Description";
+						};
+					};
+					id=6;
+					side="LOGIC";
+					vehicle="ModuleCreateDiaryRecord_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					syncId=6;
+					synchronizations[]={0,1,3,2,4};
+				};
+			};
+		};
+		class Item3
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={7089.4883,149.74451,1604.6968};
+					id=7;
+					side="EAST";
+					vehicle="rhs_msv_sergeant";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.55000001;
+				};
+				class Item1
+				{
+					position[]={7084.4883,149.83826,1599.6968};
+					id=8;
+					side="EAST";
+					vehicle="rhs_msv_machinegunner";
+					skill=0.40000001;
+				};
+				class Item2
+				{
+					position[]={7092.4883,150.46657,1599.6968};
+					id=9;
+					side="EAST";
+					vehicle="rhs_msv_at";
+					skill=0.40000001;
+				};
+				class Item3
+				{
+					position[]={7094.4883,150.60451,1599.6968};
+					id=10;
+					side="EAST";
+					vehicle="rhs_msv_strelok_rpg_assist";
+					skill=0.40000001;
+				};
+			};
+			class Waypoints
+			{
+				items=7;
+				class Item0
+				{
+					position[]={7612.6328,212.42561,926.31958};
+					formation="STAG COLUMN";
+					speed="LIMITED";
+					combat="AWARE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={7307.8296,261.27557,915.8606};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item2
+				{
+					position[]={7191.2871,285.53387,1057.8035};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item3
+				{
+					position[]={7143.4751,246.29556,847.13062};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item4
+				{
+					position[]={7006.0142,252.65509,848.62476};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item5
+				{
+					position[]={6672.8223,152.07513,1220.6639};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item6
+				{
+					position[]={7028.4263,156.11375,1498.5731};
+					type="CYCLE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=1;
+		class Item0
+		{
+			position[]={7637.0156,144.62924,47.870636};
+			id=11;
+			side="EMPTY";
+			vehicle="rhs_weapon_crate";
+			skill=0.60000002;
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"woodland_acr"
+	};
+	addOnsAuto[]=
+	{
+		"woodland_acr"
+	};
+	randomSeed=3253707;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.15000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.15000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2010;
+		month=7;
+		day=6;
+		hour=10;
+		minute=0;
+		startFogDecay=0.0049999999;
+		forecastFogDecay=0.0049999999;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"woodland_acr"
+	};
+	addOnsAuto[]=
+	{
+		"woodland_acr"
+	};
+	randomSeed=11936037;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.15000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.15000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2010;
+		month=7;
+		day=6;
+		hour=10;
+		minute=0;
+		startFogDecay=0.0049999999;
+		forecastFogDecay=0.0049999999;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"woodland_acr"
+	};
+	addOnsAuto[]=
+	{
+		"woodland_acr"
+	};
+	randomSeed=1773368;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.15000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.15000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2010;
+		month=7;
+		day=6;
+		hour=10;
+		minute=0;
+		startFogDecay=0.0049999999;
+		forecastFogDecay=0.0049999999;
+	};
+};
