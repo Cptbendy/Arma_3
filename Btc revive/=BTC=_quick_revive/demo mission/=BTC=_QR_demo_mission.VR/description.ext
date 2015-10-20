@@ -1,0 +1,22 @@
+onLoadIntroTime=false;
+onLoadMissionTime=false;
+disabledAI=1;
+debriefing=1;
+showGPS=1;
+Respawn = 3;
+RespawnDelay = 1;
+RespawnDialog = 0;
+enabledebugconsole = true;
+loadScreen = "=BTC=_logo.paa";
+author = Giallustio;
+onLoadName = =BTC= Quick Revive;
+onLoadMission = www.blacktemplars.altervista.org;
+
+class Header
+{
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 8;
+};
+
+#include "=BTC=_q_revive\dlg.h"
